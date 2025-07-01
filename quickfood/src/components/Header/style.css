@@ -1,0 +1,77 @@
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;    
+    padding: 40px 0px;
+}
+
+.header-links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.green-text{
+    color: var(--color-green-primary);
+}
+
+.header-item{
+    text-decoration: none;
+    color: var(--color-black-opacity); 
+    display: inline-block;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.header-item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-green-primary);
+  transition: width 0.2s ease;
+}
+
+.header-item:hover::after {
+  width: 100%;
+}
+
+.header-button-container{
+    display: flex;   
+    gap: 24px;
+    align-items: center;
+}
+
+.header-button-iconbox{
+    display: flex;
+    width: 95px;
+    height: 40px;
+    gap: 5px;
+}
+
+.header-button-icon{
+    border: 0;
+    background-color: transparent;   
+    cursor: pointer;     
+}
+
+.header-button-login{
+    width: 105px;
+    height: 51px;
+    border: 1px solid var(--color-green-primary);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--color-green-primary);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.header-button-login:hover{
+    color: white;
+    border: white;
+    background-color: var(--color-green-primary);
+}
