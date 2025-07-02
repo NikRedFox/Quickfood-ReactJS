@@ -59,6 +59,14 @@ header{
     cursor: pointer;     
 }
 
+.header-button-icon img {
+  transition: transform 0.3s ease;
+}
+
+.header-button-icon img:hover {
+  transform: translateY(-4px) scale(1.1);
+}
+
 .header-button-login{
     width: 105px;
     height: 51px;
