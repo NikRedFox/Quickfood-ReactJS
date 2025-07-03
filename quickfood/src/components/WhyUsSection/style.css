@@ -1,0 +1,125 @@
+.why-bg{
+    background-color: var(--color-white-BG);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.why-container{
+    display: flex;
+    width: 679px;
+    height: 87px;
+    gap: 7px;
+    margin-bottom: 60px;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.why-container h2{
+    font-size: var(--headline2);
+    display: flex;
+    width: 355px;
+    height: 59px;
+    margin: 0px 0px 7px 0px;
+}
+
+.why-container p{
+    font-size: 18px;
+    color: var(--color-gray);
+    margin: 0;
+}
+
+.why-img-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.why-img{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    width: 400px;
+    height: 339px;
+}
+
+.order-img{
+    display: flex;
+    width: 216px;
+    height: 289px;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-img-text{
+    display: flex;    
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 220px;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.why-img-text h3{
+    margin: 0px;  
+    font-size: var(--body-regular1);
+    font-weight: bold;
+}
+
+.why-img-text p{
+    font-size: var(--body-regular1);
+    color: var(--color-black-opacity);
+}
+
+.why-numbers{
+    display: flex;
+    justify-content: center;
+    gap: 47px;
+    margin-top: 60px;    
+}
+
+.why-numbers-text{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 400px;
+    height: 87px;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-numbers-text h2{
+    margin: 0;
+    font-size: var(--headline2);
+    font-weight: bold;
+}
+
+.why-numbers-text p{
+    font-size: var(--body-regular1);
+    color: var(--color-black-opacity);
+}
+
+/**/
+
+.why-img {
+  opacity: 0;
+  transform: translateY(20px);
+  
+}
+
+.why-img.show{
+   animation: fadeSlideUp 0.6s ease forwards; 
+}
+
+.why-img:nth-child(1) { animation-delay: 0.2s; }
+.why-img:nth-child(2) { animation-delay: 0.4s; }
+.why-img:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
