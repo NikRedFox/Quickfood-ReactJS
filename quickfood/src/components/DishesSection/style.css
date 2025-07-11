@@ -36,6 +36,16 @@
     transition:  all 0.6s ease;
 }
 
+.dark .special-img{
+    background-color: rgba(20, 172, 15, 0.05);
+    /* border: 1px solid rgba(0, 255, 255, 0.1); */
+
+}
+
+.dark .special-img:hover{
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
 .special-img.show{
     opacity: 1;
     transform: translateY(0);

@@ -6,10 +6,21 @@ import Header from "./components/Header";
 import Hero from "./components/HeroSection";
 import Subscribe from "./components/SubscribeSection";
 import WhyUs from "./components/WhyUsSection";
+import { useState, useEffect } from "react";
+import './App.css'
 
 function App(){
+const[darkTheme, setDarkTheme] = useState(false)
+
+  useEffect(() =>{
+    document.body.classList.toggle('dark', darkTheme)
+  }, [darkTheme])
+
   return(
     <>
+      <button className='theme-toggle'
+        onClick={() => setDarkTheme((prev) => !prev)}
+      >{darkTheme ? '🌙 Dark Mode' : '☀️ Light Mode'}</button>
       <Header/>
       <Hero/>
       <WhyUs/>

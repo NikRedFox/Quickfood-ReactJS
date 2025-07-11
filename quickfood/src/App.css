@@ -1,0 +1,16 @@
+.theme-toggle{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid;
+    padding: 5px;
+    color: #000000;
+}
+
+body.dark .theme-toggle{
+    color: white;
+    border-color: white;
+}
