@@ -3,7 +3,8 @@ import Logo from '../../assets/QUICKFOOD-Icon.svg'
 import Search from '../../assets/Search-icon.svg'
 import Cart from '../../assets/Shopcart-icon.svg'
 
-const Header =()=>{
+
+const Header =({darkTheme, setDarkTheme})=>{
     return(
         <header>
             <div className="header_icon">
@@ -30,6 +31,7 @@ const Header =()=>{
                 </div>            
                 
                 <button className="header-button-login">Login</button>
+                <button className='theme-toggle' onClick={() => setDarkTheme((prev) => !prev)}>{darkTheme ? '🌙' : '☀️'}</button>
             </div>
         </header>
     )

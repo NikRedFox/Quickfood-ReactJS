@@ -13,15 +13,17 @@ function App(){
 const[darkTheme, setDarkTheme] = useState(false)
 
   useEffect(() =>{
-    document.body.classList.toggle('dark', darkTheme)
+    if(darkTheme){
+      document.body.classList.add('dark')
+    }
+    else{
+      document.body.classList.remove('dark')
+    }
   }, [darkTheme])
 
   return(
-    <>
-      <button className='theme-toggle'
-        onClick={() => setDarkTheme((prev) => !prev)}
-      >{darkTheme ? '🌙 Dark Mode' : '☀️ Light Mode'}</button>
-      <Header/>
+    <>      
+      <Header darkTheme={darkTheme} setDarkTheme={setDarkTheme}/>
       <Hero/>
       <WhyUs/>
       <Dishes/>
