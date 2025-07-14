@@ -4,6 +4,7 @@ header{
     justify-content: space-around;
     align-items: center;    
     padding: 40px 0px;
+    position: relative;
 }
 
 .header-links{
@@ -98,4 +99,68 @@ header{
 body.dark .theme-toggle{
     color: white;
     border-color: white;
+}
+
+/*Mobile*/
+
+.hamburguer{
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.dropdown-menu{
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.dropdown-menu.open{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body.dark .dropdown-menu{
+    background-color: #222;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.7);
+}
+
+
+@media(max-width: 480px){
+    .hamburguer{
+        display: block;
+    }
+        
+    .header-button-container{
+        display: none;
+    }
+
+    .dropdown-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 20px;
+        align-items: flex-start;
+    }
+
+    .header-button-iconbox{
+        gap: 10px;
+    }
+
+    .header-button-login{
+        width: 100%;
+    }
 }
