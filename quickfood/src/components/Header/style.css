@@ -131,6 +131,8 @@ body.dark .theme-toggle{
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+    width: 50%;
+    padding: 30px;    
 }
 
 body.dark .dropdown-menu{
@@ -140,6 +142,9 @@ body.dark .dropdown-menu{
 
 
 @media(max-width: 480px){
+    .header-links{
+        flex-direction: column;
+    }
     .hamburguer{
         display: block;
     }

@@ -123,3 +123,31 @@
     transform: translateY(0);
   }
 }
+
+@media(max-width: 480px){
+    .why-bg{
+        position: relative;
+        padding: 30px;
+        height: 1400px;
+    }
+    
+    .why-container{
+        width: 400px;        
+    }
+
+    .why-img-container{
+        flex-direction: column;
+    }
+
+    .why-img{
+        gap: 70px;
+    }
+
+    .why-numbers{
+        flex-direction: column;
+        position: absolute;
+        top: 25%;
+        gap: 280px;
+    }
+
+}

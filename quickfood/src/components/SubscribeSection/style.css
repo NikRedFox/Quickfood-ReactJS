@@ -67,3 +67,18 @@
     color: var(--color-green-primary);
     border: 2px solid var(--color-green-primary);
 }
+
+@media(max-width: 480px){
+    .subscribe-bg{
+        padding: 20px;
+        height: 400px;
+    }
+    .subscribe-form input{
+        width: 400px;
+    }
+
+    .subscribe-button{
+        top: 100px;
+        left: 100px;
+    }
+}

@@ -104,3 +104,13 @@
     text-align: center;
     color: var(--color-black-opacity);
 }
+
+@media(max-width: 480px){
+    .clients-container{
+        flex-direction: column;
+    }
+
+    .clients-bg{
+        padding: 30px;
+    }
+}

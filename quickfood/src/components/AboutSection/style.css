@@ -75,3 +75,27 @@
         transform:  translateX(0); 
     }
 }
+
+@media(max-width: 480px) {
+    .about-container{
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+
+    .about-container img{
+        width: 90%;
+    }
+
+    .about-text{
+        height: 350px;
+        gap: 50px;
+    }
+
+    .about-text p{
+        width: 380px;
+    }
+
+    .about-text button{
+        margin-top: 20px;
+    }
+}

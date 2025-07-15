@@ -130,3 +130,17 @@
   transform: translateY(0);
 }
 
+@media(max-width: 480px) {
+  .footer-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-services{
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-line{
+    width: 360px;
+  }
+}
