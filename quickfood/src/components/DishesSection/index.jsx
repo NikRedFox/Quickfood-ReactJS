@@ -9,13 +9,13 @@ const Dishes =()=>{
     const[visible, setVisible] = useState(false)
 
     useEffect(() =>{
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting){
-                    setVisible(true)
-                    observer.unobserve(entry.target)
-                }
-            }, {threshold: 0.4}
+        const observer = new IntersectionObserver(([entry]) => {
+            console.log('intersectou?', entry.isIntersecting)
+            if (entry.isIntersecting){
+                setVisible(true)
+                observer.unobserve(entry.target)
+            }
+        }, {threshold: 0.4}
         )
 
         if (sectionRef.current){
@@ -30,7 +30,7 @@ const Dishes =()=>{
     return(
         <section className="special-container" ref={sectionRef}>
             <h2>Special dishes for you</h2>
-            <div className="special-dishes-container">
+            <div className="special-dishes-container" ref={sectionRef}>
                 <div className={`special-img ${visible ? 'show': ''}`}>
                     <img src={Salada2} alt="Salada imagem" title="Salada imagem" loading="lazy"/>
                     <h3>Garlic Salad</h3>
@@ -52,7 +52,7 @@ const Dishes =()=>{
                     <button>Buy Now</button>
                 </div> 
             </div>        
-        </section>
+        </section>        
     )
 }
 

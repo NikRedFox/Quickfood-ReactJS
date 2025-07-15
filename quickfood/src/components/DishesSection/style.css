@@ -33,29 +33,38 @@
     border-radius: 10px;
     opacity: 0;
     transform: translateY(30px);
-    transition:  all 0.6s ease;
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .dark .special-img{
     background-color: rgba(20, 172, 15, 0.05);
-    /* border: 1px solid rgba(0, 255, 255, 0.1); */
-
 }
 
 .dark .special-img:hover{
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
-.special-img.show{
-    opacity: 1;
-    transform: translateY(0);
+.special-img.show {
+  animation: fadeUp 0.6s ease forwards;
 }
 
-@keyframes fadeUp{
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
+.special-img.show:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.special-img.show:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.special-img.show:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .special-img:hover{
