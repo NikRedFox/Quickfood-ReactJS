@@ -76,8 +76,8 @@ Foi baseada em um design criado no Figma como parte de um estudo pessoal de fron
 
 <!-- LINK PARA O GITHUB PAGES -->
 
-* Pode também rodar o site sem baixar pelo link do Github pages:
-* <a href="https://nikredfox.github.io/QuickFood/">QuickFood</a>
+<!--* Pode também rodar o site sem baixar pelo link do Github pages:
+* <a href="https://nikredfox.github.io/QuickFood/">QuickFood</a> -->
 
 <!-- MODELO DE PRÉ REQUISITOS -->
 ### Pré-requisitos
